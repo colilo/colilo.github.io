@@ -1,1 +1,38 @@
-Hello world!
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button</p>
+
+<button onclick="welcome()">Welcome</button>
+
+<p id="welcome"></p>
+
+<script>
+function welcome() {
+    var welcome = "welcome";
+    var reverse = function(s) {
+        return s.split("").reverse().join("");
+    }
+    
+    
+            
+    var barisia = {
+        str1: "ion",
+        str2: reverse("rcne"),
+        str3: "ypt",
+        request: function(preference) {
+            return preference + "secret word:" + this.str2 + this.str3 + this.str1;
+        }
+    };
+    var res = barisia.request(welcome);
+
+
+
+
+    document.getElementById("welcome").innerHTML = res;
+}
+</script>
+
+</body>
+</html>
